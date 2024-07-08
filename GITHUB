@@ -1,0 +1,28 @@
+abstract class T
+{
+    abstract void div();
+    void display()
+    {
+        System.out.println("This is a normal method ");
+    }
+}
+class D extends T
+{
+ void div()
+    {
+        System.out.println("This is the abstract method ");
+    }
+    void k()
+    {
+        System.out.print("This is the messege from  main class ");
+
+    }
+    public static void main(String ar[])
+    {
+       
+    T t1=new T();
+    t1.div();
+    t1.k();
+    t1.display();
+}
+}
